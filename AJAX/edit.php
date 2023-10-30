@@ -5,22 +5,23 @@
 </head>
 
 
+
 <?php
 include "../config.php";
+if(isset($_POST["submitedit"])){
+
 
 $id = $_POST['id'];
-$qry = "UPDATE `users` SET `name`='[value-2]',`email`='[value-3]',`gender`='[value-4]',`password`='[value-5]'";
-$sql = mysqli_query($con,$qry);
+$name = $_POST['name'];
+$email = $_POST['email'];
+$gender = $_POST['gender'];
+$password = $_POST['password'];
 
+$qry = "UPDATE `users` SET `name`='$name', `email`='$email', `gender`='$gender', `password`='$password' WHERE `id`=$id";
+$sql = mysqli_query($conn, $qry);
 
-
-
-?>
-<?php
-
-$qry_select = "select * from users where id=$id";
-$res = mysqli_query($con,$qry_select); 
-
+}
 
 ?>
+
 
