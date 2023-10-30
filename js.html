@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <h1 id="heading"></h1>
+    <input type="text" id="input-value"><br>
+    <textarea name="txt" id="text-area" cols="30" rows="10"></textarea><br>
+    <button onclick="window.alert('hello')">Click here</button><br>
+    <button onclick="print()">print this</button><br>
+    <script>
+        var heading = document.getElementById("heading");
+        heading.innerHTML ="Changed the heading";
+
+        //input value show
+        let inputvalue = document.getElementById("input-value");
+        let print_area = document.getElementById("text-area");
+        const logMessageTwo = function() {
+            console.log('Great, thanks!');
+            }
+        const asd = "heelo";
+        logMessageTwo();
+        const print = () =>{
+            logMessageTwo();
+            
+        }
+        
+
+    </script>
+</body>
+</html>
