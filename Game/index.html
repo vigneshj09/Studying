@@ -5,35 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <title>Simple Game</title>
-</head>
-<body>
-    <label for="deposite">Enter the Deposite Amount:</label>
-    <input type="number" name="desposite" id="deposite">
-    <button type="submit" id="depositeid">Enter</button><br>
-    <label for="deposite">Enter the Number of lines:</label>
-    <input type="number" name="line" id="lines">
-    <button type="submit" id="linesid">Enter</button>
-    
-    
-    
-    
-    <script>
-        $(document).ready(function(){
-            $("#despositeid").click(function(){
-                var deposite = $("#deposite").val();
-                if(isNaN(deposite) || deposite <= 0){
-                    console.log(deposite +"Is Not Vaild");
-                }else{
-                    console.log("okay");
-                }
-                
-            });
-            $("#linesid").click(function(){
-                
-            })
-            
-        });
+    <style>
+        body {
+            background-color: #fa4251;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
 
-    </script>
+        .background {
+            width: 80%;
+            height: 80%;
+            background-color: rgb(250, 250, 250);
+            border-radius: 10px;
+        }
+    </style>
+</head> 
+<body>
+    <div class="background"></div>
 </body>
 </html>
